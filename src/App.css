@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -105,4 +103,28 @@ li:last-child {
   font-weight: 400;
   color: #e83108;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 768px) {
+  .App {
+    max-width: 100%;
+  }
+  .input-wrapper {
+    margin: 10px 0;
+  }
+  .todos-wrapper {
+    margin-bottom: 0;
+  }
+  .todo {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  input,
+  button {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
